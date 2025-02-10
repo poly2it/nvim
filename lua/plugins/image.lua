@@ -39,7 +39,7 @@ local M = {
 		editor_only_render_when_focused = false,
 		tmux_show_only_in_active_window = false,
 		clear_in_insert_mode = false,
-		hijack_file_patterns = { "*.png", "*.jpg", "*.jpeg", "*.gif", "*.webp", "*.avif" },
+		hijack_file_patterns = { "*.png", "*.jpg", "*.jpeg", "*.gif", "*.webp", "*.avif", ".svg" },
 	},
 }
 
