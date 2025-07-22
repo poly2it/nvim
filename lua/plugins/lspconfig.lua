@@ -73,6 +73,8 @@ local M = {
 		})
 		vim.g.rust_recommended_style = 0
 
+		lspconfig.tinymist.setup({})
+
 		lspconfig.ts_ls.setup({})
 		lspconfig.jsonls.setup({
 			commands = {

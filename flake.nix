@@ -28,6 +28,7 @@
         cargo
         rustfmt
         rustc
+        tinymist
 
         typescript-language-server
         vscode-langservers-extracted
