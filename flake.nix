@@ -32,6 +32,12 @@
 
         typescript-language-server
         vscode-langservers-extracted
+        svelte-language-server
+
+        dotnetCorePackages.sdk_9_0-bin
+        roslyn-ls
+        omnisharp-roslyn
+        netcoredbg
 
         # Rocks
         lua51Packages.luarocks-nix
@@ -58,7 +64,9 @@
           |> lib.concatStringsSep "\n"
         );
       postFixup = ''
-        wrapProgram $out/bin/nvim --prefix PATH : ${pkgs.lib.makeBinPath runtimeDependencies}
+        wrapProgram $out/bin/nvim \
+          --prefix PATH : ${pkgs.lib.makeBinPath runtimeDependencies} \
+          --set DOTNET_CLI_TELEMETRY_OPTOUT 1
       '';
     });
   in

@@ -85,6 +85,9 @@ local M = {
 				}
 			}
 		})
+		lspconfig.svelte.setup({
+			root_dir = util.root_pattern("svelte.config.ts", ".git"),
+		});
 
 		vim.api.nvim_create_autocmd('FileType', {
 			pattern = 'nix',
