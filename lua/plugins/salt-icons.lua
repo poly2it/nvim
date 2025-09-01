@@ -47,6 +47,7 @@ local M = {
 				["cc"]    = { icon = "", color = colors.blue_1   },
 				["hpp"]   = { icon = "", color = colors.blue_1   },
 				["hxx"]   = { icon = "", color = colors.blue_1   },
+				["cs"]    = { icon = "", color = colors.green_3  },
 				["lua"]   = { icon = "󰢱", color = colors.blue_3   },
 				["vim"]   = { icon = "", color = colors.green_4  },
 				["py"]    = { icon = "󰌠", color = colors.teal_1   },
@@ -65,6 +66,8 @@ local M = {
 				["java"]  = { icon = "󰬷", color = colors.teal_1  },
 
 				["pyi"]  = { icon = "", color = colors.light_2 },
+
+				["uid"]  = { icon = "", color = colors.light_2 },
 
 				["nix"] = { icon = "", color = colors.blue_1 },
 
